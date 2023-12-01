@@ -6,6 +6,7 @@ import 'package:myapp/Home_page.dart';
 import 'package:myapp/chat_user.dart';
 import 'package:myapp/local.dart';
 import 'package:myapp/login.dart';
+import 'package:myapp/splash_screen.dart';
 
 
  Future<void> backgroundHandler(RemoteMessage message) async{
@@ -60,8 +61,9 @@ class _MyappState extends State<Myapp> {
   @override
   Widget build(BuildContext context) {
      return MaterialApp(
-       home: //SplashScreen(),
-       user != null ? const HomePage() : const Login(),
+       debugShowCheckedModeBanner: false,
+       home: SplashScreen(),
+     //  user != null ? const HomePage() : const Login(),
      );
   }
 }
