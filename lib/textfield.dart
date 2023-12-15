@@ -22,7 +22,7 @@ class _TextFState extends State<TextF> {
        decoration: InputDecoration(
          prefixIcon: Icon(widget.icon,color: Colors.black),
          filled: true,
-         fillColor: Colors.white.withOpacity(0.4),
+         fillColor: Colors.white,
          labelText: widget.label,
          labelStyle: TextStyle(color: Colors.black.withOpacity(0.7)),
          border: OutlineInputBorder(borderRadius: BorderRadius.circular(50),),
@@ -51,7 +51,7 @@ class _EmailVState extends State<EmailV> {
       decoration: InputDecoration(
           prefixIcon: const Icon(Icons.email,color: Colors.black),
           filled: true,
-          fillColor: Colors.white.withOpacity(0.4),
+          fillColor: Colors.white,
           labelText: widget.title,
           labelStyle: TextStyle(color: Colors.black.withOpacity(0.7)),
           border: OutlineInputBorder(borderRadius: BorderRadius.circular(50),),
@@ -83,7 +83,7 @@ class _PaswordValState extends State<PaswordVal> {
       decoration: InputDecoration(
           prefixIcon: const Icon(Icons.lock,color: Colors.black),
           filled: true,
-          fillColor: Colors.white.withOpacity(0.4),
+          fillColor: Colors.white,
           labelText: widget.text,
           labelStyle: TextStyle(color: Colors.black.withOpacity(0.7)),
           border: OutlineInputBorder(borderRadius: BorderRadius.circular(50),),
@@ -120,7 +120,7 @@ class _NameValState extends State<NameVal> {
       decoration: InputDecoration(
           prefixIcon: const Icon(Icons.person,color: Colors.black),
           filled: true,
-          fillColor: Colors.white.withOpacity(0.4),
+          fillColor: Colors.white,
           labelText: widget.text,
           labelStyle: TextStyle(color: Colors.black.withOpacity(0.7)),
           border: OutlineInputBorder(borderRadius: BorderRadius.circular(50),),

@@ -25,8 +25,8 @@ class _MessageCardState extends State<MessageCard> {
         Row(
           children: [
             const SizedBox(width: 5),
-            if(widget.message.read.isNotEmpty)
-            const Icon(Icons.done_all_rounded,color: Colors.blue,size: 20),
+            //if(widget.message.read.isNotEmpty)
+            widget.message.read.isNotEmpty ? Icon(Icons.done_all_rounded,color: Colors.blue,size: 20) : Icon(Icons.done,size: 20,),
             const SizedBox(width: 2),
             Text( Mydate.getTime(context: context, time: widget.message.sent)
               ,style: const TextStyle(fontSize: 16,color: Colors.black54),),

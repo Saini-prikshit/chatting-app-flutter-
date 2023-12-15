@@ -8,6 +8,7 @@ import 'package:myapp/chatcard.dart';
 import 'package:myapp/login.dart';
 import 'package:myapp/setting.dart';
 
+
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
 
@@ -39,7 +40,8 @@ class _HomePageState extends State<HomePage> {
             backgroundColor: Colors.grey.shade300,
             appBar:
             AppBar(
-              backgroundColor: Colors.grey,
+              elevation: 0,
+              backgroundColor: Colors.grey.shade500,
               title:
               isSearch?  Padding(
                 padding: const EdgeInsets.only(left: 40),
@@ -103,7 +105,7 @@ class _HomePageState extends State<HomePage> {
                        //Navigator.pop(context);
                         try {
                           await FirebaseAuth.instance.signOut().then((value) =>
-                            Navigator.pushReplacement(context ,MaterialPageRoute(builder: (context) => const Login(),),),
+                            Navigator.pushReplacement(context ,MaterialPageRoute(builder: (context) => Login(),),)
                           );
                           await GoogleSignIn().signOut().then((value) {
                             Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => Login(),));
